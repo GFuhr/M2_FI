@@ -21,9 +21,14 @@ public:
     double retirer(double dValeur)
     {
         dLastOp=dValeur;
+        if ((dSolde-dValeur)<0.)
+        {
 
-        dSolde=dSolde-dValeur;
-        return dValeur;
-
-    };
+        }
+        else
+        {
+            dSolde=dSolde-dValeur;
+        }
+        
+    }
 };

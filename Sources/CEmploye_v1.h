@@ -79,17 +79,26 @@ CPersonne::CPersonne(CPersonne const & autrepersonne)
 }
 
 CPersonne::~CPersonne(void)
-{     std::cout<<"+++ Personne : [ "<<name<<" ] disparue +++"<<std::endl; }
+{
+    std::cout<<"+++ Personne : [ "<<name<<" ] disparue +++"<<std::endl;
+}
 
 
 std::string  CPersonne::getName(void) const
-{     return name; }
+{
+    return name;
+}
 
 void  CPersonne::setName(std::string newname) 
-{     name=newname; }
+{
+    name=newname;
+}
 
 int  CPersonne::getID(void) const
-{     return id; }
+{
+    return id;
+}
+
 
 
 CClient::CClient(std::string client_name, double soldeinit):CPersonne(client_name)
@@ -118,6 +127,10 @@ CClient::~CClient(void)
     std::cout<<"+++ Client : [ "<<name<<" ] disparue +++"<<std::endl;
 }
 
+
+
+
+
 void CEmploye::operation_bancaire(CClient &  client, double const somme)
 {
     CCompte  &comptetemp = client.donner_id_compte();
@@ -133,6 +146,7 @@ void CEmploye::virement_compte(CClient &  client_dest,CClient &  client_src, dou
     CCompte  &comptetemp_dest = client_dest.donner_id_compte();
     CCompte  &comptetemp_src = client_src.donner_id_compte();
     comptetemp_dest.virement(comptetemp_src,somme);
+
 };
 
 double CEmploye::solde_client(CClient  &client) const
@@ -144,5 +158,6 @@ double CEmploye::solde_client(CClient  &client) const
 CEmploye::CEmploye(std::string client_name):CPersonne(client_name)
 {
     name=client_name;
+
     std::cout<<"*** Personne : [ "<<name<<" ] devenue employe ***"<<std::endl;
 }
