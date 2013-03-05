@@ -1,0 +1,46 @@
+include config.in
+####### Output directory
+
+OBJECTS_DIR   = ./
+
+####### Files
+
+OBJECTS       = Classe_point.o \
+		main_Point.o
+
+
+DESTDIR       = 
+TARGET        = point.exe
+
+
+
+####### Build rules
+
+all: $(TARGET)
+
+$(TARGET):  $(OBJECTS)  
+	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
+
+
+clean: 
+	-$(DEL_FILE) $(OBJECTS)
+	-$(DEL_FILE) *~ core *.core
+
+
+####### Sub-libraries
+
+distclean: clean
+	-$(DEL_FILE) $(TARGET) 
+
+
+
+####### Compile
+
+Classe_point.o: Classe_point.cpp Classe_point.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Classe_point.o Classe_point.cpp
+
+
+main_Point.o: main_Point.cpp Classe_point.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main_Point.o main_Point.cpp
+
+
