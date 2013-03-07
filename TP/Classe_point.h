@@ -6,7 +6,6 @@
 #include <fstream>
 #include <string>
 
-using namespace std;
 //classe point
 class Point {
     double  _x ;
@@ -25,8 +24,6 @@ public:
 
     double  distance(const Point &p) const;
 
-    bool writePoint(void) const ;
-    bool readPoint(void);
 };
 
 #endif
