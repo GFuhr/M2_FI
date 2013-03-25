@@ -48,7 +48,7 @@ $(TARGETP):  $(OBJECTSP)
 
 clean: 
 	-$(DEL_FILE) $(OBJECTSG)
-    -$(DEL_FILE) $(OBJECTSP)
+	-$(DEL_FILE) $(OBJECTSP)
 	-$(DEL_FILE) *~ core *.core
 
 
@@ -71,4 +71,4 @@ main_Graphe.o: main_Graphe.cpp Classe_poly.h Classe_point.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main_Graphe.o main_Graphe.cpp
 
 main_Point.o: main_Point.cpp Classe_point.h
-    $(CXX) -c $(CXXFLAGS) $(INCPATH) -o main_Point.o main_Point.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main_Point.o main_Point.cpp
