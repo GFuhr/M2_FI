@@ -7,7 +7,7 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-    CCompte compte1(30);
+    CCompte compte1;
     CCompte compte2(12);
 
     cout<<"le compte 1 a un solde de " << compte1.recup_solde()<<endl;

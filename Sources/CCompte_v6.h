@@ -12,7 +12,7 @@ public:
        std::cout<<"***"<<std::endl<<"constructeur de la classe CCompte avec argument "<<std::endl<<"***"<<std::endl;
     }
 
-        CCompte(double sommeinit)
+        CCompte(double sommeinit=-1)
     {dSolde=dLastOp=sommeinit;
        std::cout<<"***"<<std::endl<<"constructeur de la classe CCompte avec argument "<<std::endl<<"***"<<std::endl;
     }
@@ -55,6 +55,6 @@ public:
         {
             dSolde=dSolde-dValeur;
         }
-        
+
     }
 };

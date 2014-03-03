@@ -1,4 +1,11 @@
-include config.in
+
+CXXFLAGS = -O2
+LFLAGS = -O2
+INCPATH = ./ 
+CXX = g++
+LIBS = -lm
+LINK = g++
+
 ####### Output directory
 
 OBJECTS_DIR   = ./
@@ -9,7 +16,7 @@ OBJECTS       = Classe_point.o \
 		main_Point.o
 
 
-DESTDIR       = 
+DESTDIR       = ./
 TARGET        = point.exe
 
 
@@ -19,7 +26,7 @@ TARGET        = point.exe
 all: $(TARGET)
 
 $(TARGET):  $(OBJECTS)  
-	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
+	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS)  $(LIBS)
 
 
 clean: 
@@ -43,4 +50,5 @@ Classe_point.o: Classe_point.cpp Classe_point.h
 main_Point.o: main_Point.cpp Classe_point.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main_Point.o main_Point.cpp
 
-
+main_Graphe.o: main_Graphe.cpp Classe_point.h Classe_point.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main_Graphe.o main_Graphe.cpp
