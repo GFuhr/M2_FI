@@ -12,7 +12,6 @@ class Graphe {
 public :
     Graphe(void);
     Graphe(const int N);
-   // Graphe(double const *const listX, double const *const listY, const int N);
     Graphe(Point const *const Plist, const int N);
     Graphe(std::vector<Point> &Plist );
     Graphe(const Graphe & Poly);

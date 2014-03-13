@@ -5,7 +5,7 @@
 #include <cmath>
 #include <fstream>
 #include <string>
-
+#include <vector>
 //classe point
 class Point {
     double  _x ;
