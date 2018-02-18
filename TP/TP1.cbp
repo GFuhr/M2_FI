@@ -32,13 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Classe_point.cpp" />
-		<Unit filename="Classe_point.h" />
-		<Unit filename="main_Point.cpp" />
+		<Unit filename="Classe_capteurs.cpp" />
+		<Unit filename="Classe_capteurs.h" />
+		<Unit filename="main_capteurs.cpp" />
 		<Extensions>
-			<envvars />
 			<code_completion />
-			<lib_finder disable_auto="1" />
+			<envvars />
 			<debugger />
 		</Extensions>
 	</Project>

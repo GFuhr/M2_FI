@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1518987269 source:d:\hubic\git_repos_codes\m2_fi\m2_fi\tp\classe_capteurs.cpp
+	"Classe_capteurs.h"
+
+1518987319 d:\hubic\git_repos_codes\m2_fi\m2_fi\tp\classe_capteurs.h
+	<iostream>
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<string>
+	<vector>
+
