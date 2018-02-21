@@ -5,10 +5,7 @@
 
 
 class Infrastructure {
-    std::vector<CapteurAnalogique> humidity;
-    std::vector<CapteurDigital> temperature;
-    int nombre_ca;
-    int nomre_cd;
+    // Déclarer les données membres ici
 
 public:
     Infrastructure(void);
@@ -23,8 +20,7 @@ public:
     void print(void);
     double recuperer_valeur_digital(int N);
     double recuperer_valeur_analogique(int N);
-    void ajoutcapteur_digital(int N);
-    void ajoutcapteur_analogique(int N);
+
 };
 
 

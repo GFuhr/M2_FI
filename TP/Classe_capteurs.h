@@ -21,7 +21,7 @@ private:
 
 public:
     Capteur(void) ;
-    Capteur(const int iid, const double value=-1);
+    Capteur(const int iid, const double dvalue=-1);
     Capteur(const Capteur &p);
     ~Capteur(void);
 

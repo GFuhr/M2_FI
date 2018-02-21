@@ -34,7 +34,11 @@
 		</Compiler>
 		<Unit filename="Classe_capteurs.cpp" />
 		<Unit filename="Classe_capteurs.h" />
-		<Unit filename="main_capteurs.cpp" />
+		<Unit filename="Classe_derived.cpp" />
+		<Unit filename="Classe_derived.h" />
+		<Unit filename="Classe_infra.cpp" />
+		<Unit filename="Classe_infra.h" />
+		<Unit filename="main_infra.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
