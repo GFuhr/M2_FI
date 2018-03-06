@@ -10,7 +10,7 @@ class CapteurDigital : public Capteur {
 
 public:
     CapteurDigital(void);
-    CapteurDigital(const int iid, double const range, int const bus = 1024 );
+    CapteurDigital(const int iid, double const drange, int const bus = 1024 );
     CapteurDigital(const CapteurDigital &p);
     ~CapteurDigital(void);
 
