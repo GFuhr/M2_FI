@@ -5,6 +5,7 @@
 
 
 class Infrastructure {
+private:
     // Déclarer les données membres ici
 
 public:
@@ -15,10 +16,10 @@ public:
     Infrastructure(Infrastructure const &p);
     ~Infrastructure(void);
 
-    double mean();
+    int nombre_capteurs(void);
     void print(void);
-    double recuperer_valeur_digital(int N);
-    double recuperer_valeur_analogique(int N);
+    void ajouter_valeur_digital(int N);
+    void ajouter_valeur_analogique(int N);
 
 };
 

@@ -29,25 +29,14 @@ public:
         std::cout<<"+++ Personne : [ "<<name<<" ] disparue +++"<<std::endl;
     }
 
-
     std::string  getName(void) const
-    {
-        return name;
-    }
+    { return name; }
 
     void  setName(std::string newname) 
-    {
-        name=newname;
-    }
+    { name=newname; }
 
     int  getID(void) const
-    {
-        return id;
-    }
-
-
-
-
+    { return id; }
 };
 
 
@@ -69,18 +58,14 @@ public:
         std::cout<<"*** Personne : [ "<<name<<" ] devenue client ***"<<std::endl;
     }
 
-        CClient(CClient const & client):CPersonne(client)
+    CClient(CClient const & client):CPersonne(client)
     {
         name=client.name;
-        
         std::cout<<"*** Client : [ "<<name<<" ] cree par copie ***"<<std::endl;
     }
-
     
     CCompte  &  donner_id_compte(void) 
-    {
-        return ComptePerso;
-    };
+    { return ComptePerso; };
 
     ~CClient(void)
     {
@@ -89,16 +74,15 @@ public:
 
 };
 
+
 class CEmploye:public CPersonne
 {
-
 public:
 
     ~CEmploye(void)
     {
         std::cout<<"+++ Employe : [ "<<name<<" ] disparue +++"<<std::endl;
     }
-
 
     void operation_bancaire(CClient &  client, double const somme)
     {
@@ -108,7 +92,6 @@ public:
         else
             comptetemp.retirer(somme);
     };
-
 
     void virement_compte(CClient &  client_dest,CClient &  client_src, double const somme)
     {
@@ -124,7 +107,4 @@ public:
         std::cout<<"solde du client [ "<<client.getName()<<" ] :"<<comptetemp.recup_solde()<<std::endl;
         return comptetemp.recup_solde();
     };
-
-
-
 };
