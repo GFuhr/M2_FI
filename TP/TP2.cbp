@@ -36,7 +36,7 @@
 		<Unit filename="Classe_capteurs.h" />
 		<Unit filename="Classe_derived.cpp" />
 		<Unit filename="Classe_derived.h" />
-		<Unit filename="main_capteurs_derived.cpp" />
+		<Unit filename="main_derived.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
