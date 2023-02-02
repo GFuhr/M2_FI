@@ -12,18 +12,18 @@ OBJS_TD3 = $(OBJ)/Classe_capteurs.o $(OBJ)/Classe_derived.o $(OBJ)/Classe_infra.
 $(OBJ)/%.o: $(SRC)/%.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-td1.exe: $(OBJS_TD1) $(DEPS_TD1)
+tp1.exe: $(OBJS_TD1) $(DEPS_TD1)
 	$(CC) -o $@ $^ $(CFLAGS) 
 
-td2.exe: $(OBJS_TD2) $(DEPS_TD2)
+tp2.exe: $(OBJS_TD2) $(DEPS_TD2)
 	$(CC) -o $@ $^ $(CFLAGS) 
 
-td3.exe: $(OBJS_TD2) $(DEPS_TD2)
+tp3.exe: $(OBJS_TD2) $(DEPS_TD2)
 	$(CC) -o $@ $^ $(CFLAGS)
 
-td1 : td1.exe
-td2 : td1.exe
-td3 : td1.exe
+tp1 : td1.exe
+tp2 : td1.exe
+tp3 : td1.exe
 
 clean : 
-	rm $(OBJ)/*.o ./td*.exe
+	rm $(OBJ)/*.o ./tp*.exe
